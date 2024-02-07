@@ -45,5 +45,5 @@ import { Triandulo } from "./classes/Triangulo"
 // Questão 07
 const triangulo = new Triandulo(4, 5, 3)
 console.log('É um triângulo válido? ' + triangulo.eValido())
-console.log('Área: ' + triangulo.obterArea())
+console.log('Área do triangulo: ' + triangulo.obterArea())
 console.log()
