@@ -1,4 +1,5 @@
 import { Aluno } from "./classes/Aluno"
+import { Carro } from "./classes/Carro"
 import { Circulo } from "./classes/Circulo"
 import { ContaBancaria } from "./classes/ContaBancaria"
 import { Funcionario } from "./classes/Funcionario"
@@ -43,7 +44,17 @@ import { Triandulo } from "./classes/Triangulo"
 // console.log()
 
 // Questão 07
-const triangulo = new Triandulo(4, 5, 3)
-console.log('É um triângulo válido? ' + triangulo.eValido())
-console.log('Área do triangulo: ' + triangulo.obterArea())
+// const triangulo = new Triandulo(4, 5, 3)
+// console.log('É um triângulo válido? ' + triangulo.eValido())
+// console.log('Área do triangulo: ' + triangulo.obterArea())
+// console.log()
+
+// Questão 07
+const carro = new Carro('Fiat', 'Argo', 120.5)
+console.log('Velocidade atual: ' + carro.obterVelocidade())
+carro.acelerar()
+carro.acelerar()
+console.log('Velocidade atual: ' + carro.obterVelocidade())
+carro.desacelerar()
+console.log('Velocidade atual: ' + carro.obterVelocidade())
 console.log()
