@@ -18,10 +18,14 @@ export class Triandulo {
     }
 
     obterArea() {
-        const semiPerimetro = (1/2)*(this.lado1, this.lado2, this.lado3)
+        const eValido = this.eValido()
 
-        const area = Math.sqrt(semiPerimetro * (semiPerimetro - this.lado1) * (semiPerimetro - this.lado2) * (semiPerimetro - this.lado3))
+        if (!eValido) return null
+
+        const semiPerimetro = (1/2)*(this.lado1 + this.lado2 + this.lado3)
         
-        return area
+        const area = Math.sqrt(semiPerimetro * (semiPerimetro - this.lado1) * (semiPerimetro - this.lado2) * (semiPerimetro - this.lado3)).toFixed(2)
+        
+        return Number(area)
     }
 }
