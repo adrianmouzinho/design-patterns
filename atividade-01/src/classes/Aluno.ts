@@ -14,8 +14,18 @@ export class Aluno {
             return acc + nota
         }, 0)
 
-        return (somaDasNotas / this.notas.length).toFixed(2)
+        const media = Number((somaDasNotas / this.notas.length).toFixed(2))
+
+        return media
     }
 
-    obterSituacaoDoAluno() {}
+    obterSituacaoDoAluno() {
+        const media = this.obterMedia()
+
+        if (media < 7) {
+            return 'reprovado'
+        }
+
+        return 'aprovado'
+    }
 }

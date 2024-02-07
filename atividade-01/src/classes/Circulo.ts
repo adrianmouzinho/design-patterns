@@ -6,10 +6,14 @@ export class Circulo {
     }
 
     obterArea() {
-        return (Math.PI * (this.raio ** 2)).toFixed(2)
+        const area = Number((Math.PI * (this.raio ** 2)).toFixed(2))
+
+        return area
     }
 
     obterPerimetro() {
-        return (2 * Math.PI * this.raio).toFixed(2)
+        const perimetro = Number((2 * Math.PI * this.raio).toFixed(2))
+
+        return perimetro
     }
 }

@@ -8,10 +8,14 @@ export class Retangulo {
     }
 
     obterArea() {
-        return (this.altura * this.largura).toFixed(2)
+        const area = Number((this.altura * this.largura).toFixed(2))
+
+        return area
     }
 
     obterPerimetro() {
-        return ((2 * this.altura) + (2 * this.largura)).toFixed(2)
+        const perimetro = Number(((2 * this.altura) + (2 * this.largura)).toFixed(2))
+        
+        return perimetro
     }
 }
