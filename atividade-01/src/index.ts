@@ -18,13 +18,24 @@ import { Triandulo } from './classes/Triangulo'
 // console.log()
 
 // Questão 02
-const contaBancaria = new ContaBancaria(
-  '000123456-78',
-  'Adrian Mouzinho',
-  120.25
-)
-console.log('Resultado do saque: ' + contaBancaria.sacar(-12))
-console.log('Resultado do depósito: ' + contaBancaria.depositar(200))
+try {
+  const contaBancaria = new ContaBancaria(
+    '000123456-78',
+    'Adrian Mouzinho',
+    120.25
+  )
+  let saldo = contaBancaria.obterSaldo()
+  console.log('Olá, ' + contaBancaria.obterTitular())
+  console.log('Saldo inicial: ' + saldo)
+  contaBancaria.sacar(20)
+  saldo = contaBancaria.obterSaldo()
+  console.log('Saldo após o saque: ' + saldo)
+  contaBancaria.depositar(1000)
+  saldo = contaBancaria.obterSaldo()
+  console.log('Saldo após o depósito: ' + saldo)
+} catch (error) {
+  console.error(error)
+}
 console.log()
 
 // Questão 03
