@@ -39,22 +39,28 @@ import { Triandulo } from './classes/Triangulo'
 // console.log()
 
 // Questão 03
+// try {
+//   const retangulo = new Retangulo(2, 3)
+//   const area = retangulo.obterArea()
+//   const perimetro = retangulo.obterPerimetro()
+//   console.log('Área do retângulo: ' + area)
+//   console.log('Perímetro do retângulo: ' + perimetro)
+// } catch (error) {
+//   console.error(error)
+// }
+// console.log()
+
+// Questão 04
 try {
-  const retangulo = new Retangulo(2, 3)
-  const area = retangulo.obterArea()
-  const perimetro = retangulo.obterPerimetro()
-  console.log('Área do retângulo: ' + area)
-  console.log('Perímetro do retângulo: ' + perimetro)
+  const aluno = new Aluno('Adrian', '20211BCC0008', [7, 5, 8, 8])
+  const media = aluno.obterMedia()
+  const situacao = aluno.obterSituacaoDoAluno()
+  console.log('O(A) aluno(a) ' + aluno.obterNome() + ' obteve média ' + media)
+  console.log('Situação do aluno: ' + situacao)
 } catch (error) {
   console.error(error)
 }
 console.log()
-
-// Questão 04
-// const aluno = new Aluno('Adrian', '20211BCC0008', [7, 5, 8, 8])
-// console.log('Média do aluno: ' + aluno.obterMedia())
-// console.log('Situação do aluno: ' + aluno.obterSituacaoDoAluno())
-// console.log()
 
 // Questão 05
 // const funcionario = new Funcionario('João', 'gerente de vendas', 2500)

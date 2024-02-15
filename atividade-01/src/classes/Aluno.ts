@@ -1,31 +1,51 @@
 export class Aluno {
-    nome: string
-    matricula: string
-    notas: number[]
+  private nome: string
+  private matricula: string
+  private notas: number[]
 
-    constructor(nome: string, matricula: string, notas: number[]) {
-        this.nome = nome
-        this.matricula = matricula
-        this.notas = notas
+  constructor(nome: string, matricula: string, notas: number[]) {
+    for (const nota of notas) {
+      if (nota < 0 || nota > 10) {
+        throw new Error(
+          'Todas as notas precisam estar dentro do intervalo de 0 a 10.'
+        )
+      }
     }
 
-    obterMedia() {
-        const somaDasNotas = this.notas.reduce((acc, nota) => {
-            return acc + nota
-        }, 0)
+    this.nome = nome
+    this.matricula = matricula
+    this.notas = notas
+  }
 
-        const media = Number((somaDasNotas / this.notas.length).toFixed(2))
+  obterMedia() {
+    const somaDasNotas = this.notas.reduce((acc, nota) => {
+      return acc + nota
+    }, 0)
 
-        return media
+    const media = Number((somaDasNotas / this.notas.length).toFixed(2))
+
+    return media
+  }
+
+  obterSituacaoDoAluno() {
+    const media = this.obterMedia()
+
+    if (media < 7) {
+      return 'reprovado'
     }
 
-    obterSituacaoDoAluno() {
-        const media = this.obterMedia()
+    return 'aprovado'
+  }
 
-        if (media < 7) {
-            return 'reprovado'
-        }
+  obterNome() {
+    return this.nome
+  }
 
-        return 'aprovado'
-    }
+  obterMatricula() {
+    return this.matricula
+  }
+
+  obterNotas() {
+    return this.notas
+  }
 }
