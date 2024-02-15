@@ -1,21 +1,35 @@
 export class Retangulo {
-    largura: number
-    altura: number
+  private largura: number
+  private altura: number
 
-    constructor(largura: number, altura: number) {
-        this.altura = altura
-        this.largura = largura
+  constructor(largura: number, altura: number) {
+    if (largura < 0 || altura < 0) {
+      throw new Error(
+        'A altura e a largura precisam ser maiores ou iguais a zero.'
+      )
     }
 
-    obterArea() {
-        const area = Number((this.altura * this.largura).toFixed(2))
+    this.altura = altura
+    this.largura = largura
+  }
 
-        return area
-    }
+  obterArea() {
+    const area = Number((this.altura * this.largura).toFixed(2))
 
-    obterPerimetro() {
-        const perimetro = Number(((2 * this.altura) + (2 * this.largura)).toFixed(2))
-        
-        return perimetro
-    }
+    return area
+  }
+
+  obterPerimetro() {
+    const perimetro = Number((2 * this.altura + 2 * this.largura).toFixed(2))
+
+    return perimetro
+  }
+
+  obterLargura() {
+    return this.largura
+  }
+
+  obterAltura() {
+    return this.altura
+  }
 }

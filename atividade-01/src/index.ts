@@ -18,31 +18,37 @@ import { Triandulo } from './classes/Triangulo'
 // console.log()
 
 // Questão 02
+// try {
+//   const contaBancaria = new ContaBancaria(
+//     '000123456-78',
+//     'Adrian Mouzinho',
+//     120.25
+//   )
+//   let saldo = contaBancaria.obterSaldo()
+//   console.log('Olá, ' + contaBancaria.obterTitular())
+//   console.log('Saldo inicial: ' + saldo)
+//   contaBancaria.sacar(20)
+//   saldo = contaBancaria.obterSaldo()
+//   console.log('Saldo após o saque: ' + saldo)
+//   contaBancaria.depositar(1000)
+//   saldo = contaBancaria.obterSaldo()
+//   console.log('Saldo após o depósito: ' + saldo)
+// } catch (error) {
+//   console.error(error)
+// }
+// console.log()
+
+// Questão 03
 try {
-  const contaBancaria = new ContaBancaria(
-    '000123456-78',
-    'Adrian Mouzinho',
-    120.25
-  )
-  let saldo = contaBancaria.obterSaldo()
-  console.log('Olá, ' + contaBancaria.obterTitular())
-  console.log('Saldo inicial: ' + saldo)
-  contaBancaria.sacar(20)
-  saldo = contaBancaria.obterSaldo()
-  console.log('Saldo após o saque: ' + saldo)
-  contaBancaria.depositar(1000)
-  saldo = contaBancaria.obterSaldo()
-  console.log('Saldo após o depósito: ' + saldo)
+  const retangulo = new Retangulo(2, 3)
+  const area = retangulo.obterArea()
+  const perimetro = retangulo.obterPerimetro()
+  console.log('Área do retângulo: ' + area)
+  console.log('Perímetro do retângulo: ' + perimetro)
 } catch (error) {
   console.error(error)
 }
 console.log()
-
-// Questão 03
-// const retangulo = new Retangulo(2, 3)
-// console.log('Área do retângulo: ' + retangulo.obterArea())
-// console.log('Perímetro do retângulo: ' + retangulo.obterPerimetro())
-// console.log()
 
 // Questão 04
 // const aluno = new Aluno('Adrian', '20211BCC0008', [7, 5, 8, 8])
