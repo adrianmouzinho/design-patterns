@@ -101,25 +101,33 @@ import { formatarDinheiro } from './utils/formatar-dinheiro'
 // console.log()
 
 // Questão 08
-const carro = new Carro('Fiat', 'Argo', 120.5)
-let velocidade = carro.obterVelocidade()
-console.log('Velocidade atual: ' + velocidade)
-carro.acelerar(2)
-velocidade = carro.obterVelocidade()
-console.log('Velocidade atual após acelerar: ' + velocidade)
-carro.desacelerar()
-velocidade = carro.obterVelocidade()
-console.log('Velocidade atual após desacelerar: ' + velocidade)
-console.log()
+// const carro = new Carro('Fiat', 'Argo', 120.5)
+// let velocidade = carro.obterVelocidade()
+// console.log('Velocidade atual: ' + velocidade)
+// carro.acelerar(2)
+// velocidade = carro.obterVelocidade()
+// console.log('Velocidade atual após acelerar: ' + velocidade)
+// carro.desacelerar()
+// velocidade = carro.obterVelocidade()
+// console.log('Velocidade atual após desacelerar: ' + velocidade)
+// console.log()
 
 // Questão 09
-// const paciente = new Paciente('Adrian', 21)
-// paciente.criarConsulta('Dra. Beatriz', 'Consulta de rotina', 'Acompanhamento de saúde geral')
-// paciente.criarConsulta('Dr. Marcos', 'Consulta de acompanhamento', 'Avaliação pós-operatória')
-// const consultas = paciente.obterConsultas()
-// console.log('Histórico de consultas do paciente: ')
-// consultas.forEach(consulta => console.log(consulta))
-// console.log()
+const paciente = new Paciente('Adrian', 21)
+paciente.criarConsulta(
+  'Dra. Beatriz',
+  'Consulta de rotina',
+  'Acompanhamento de saúde geral'
+)
+paciente.criarConsulta(
+  'Dr. Marcos',
+  'Consulta de acompanhamento',
+  'Avaliação pós-operatória'
+)
+const consultas = paciente.obterConsultas()
+console.log('Histórico de consultas do paciente: ')
+consultas.forEach((consulta) => console.log(consulta))
+console.log()
 
 //Questão 10
 // const livro = new Livro('Macunaíma', 'Mário de Andrade', 192)
