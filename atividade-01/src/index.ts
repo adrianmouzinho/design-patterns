@@ -113,25 +113,27 @@ import { formatarDinheiro } from './utils/formatar-dinheiro'
 // console.log()
 
 // Questão 09
-const paciente = new Paciente('Adrian', 21)
-paciente.criarConsulta(
-  'Dra. Beatriz',
-  'Consulta de rotina',
-  'Acompanhamento de saúde geral'
-)
-paciente.criarConsulta(
-  'Dr. Marcos',
-  'Consulta de acompanhamento',
-  'Avaliação pós-operatória'
-)
-const consultas = paciente.obterConsultas()
-console.log('Histórico de consultas do paciente: ')
-consultas.forEach((consulta) => console.log(consulta))
-console.log()
+// const paciente = new Paciente('Adrian', 21)
+// paciente.criarConsulta(
+//   'Dra. Beatriz',
+//   'Consulta de rotina',
+//   'Acompanhamento de saúde geral'
+// )
+// paciente.criarConsulta(
+//   'Dr. Marcos',
+//   'Consulta de acompanhamento',
+//   'Avaliação pós-operatória'
+// )
+// const consultas = paciente.obterConsultas()
+// console.log('Histórico de consultas do paciente: ')
+// consultas.forEach((consulta) => console.log(consulta))
+// console.log()
 
 //Questão 10
-// const livro = new Livro('Macunaíma', 'Mário de Andrade', 192)
-// livro.emprestar()
-// console.log('O livro está disponível? ' + livro.verificarDisponibilidade())
-// livro.devolver()
-// console.log('O livro está disponível? ' + livro.verificarDisponibilidade())
+const livro = new Livro('Macunaíma', 'Mário de Andrade', 192)
+livro.emprestar()
+let estaDisponivel = livro.obterDisponibilidade() ? 'sim' : 'não'
+console.log('O livro está disponível? ' + estaDisponivel)
+livro.devolver()
+estaDisponivel = livro.obterDisponibilidade() ? 'sim' : 'não'
+console.log('O livro está disponível? ' + estaDisponivel)
