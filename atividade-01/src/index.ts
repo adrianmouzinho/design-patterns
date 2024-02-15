@@ -1,26 +1,31 @@
-import { Aluno } from "./classes/Aluno"
-import { Carro } from "./classes/Carro"
-import { Circulo } from "./classes/Circulo"
-import { ContaBancaria } from "./classes/ContaBancaria"
-import { Funcionario } from "./classes/Funcionario"
-import { Livro } from "./classes/Livro"
-import { Paciente } from "./classes/Paciente"
-import { Produto } from "./classes/Produto"
-import { Retangulo } from "./classes/Retangulo"
-import { Triandulo } from "./classes/Triangulo"
-
+import { Aluno } from './classes/Aluno'
+import { Carro } from './classes/Carro'
+import { Circulo } from './classes/Circulo'
+import { ContaBancaria } from './classes/ContaBancaria'
+import { Funcionario } from './classes/Funcionario'
+import { Livro } from './classes/Livro'
+import { Paciente } from './classes/Paciente'
+import { Produto } from './classes/Produto'
+import { Retangulo } from './classes/Retangulo'
+import { Triandulo } from './classes/Triangulo'
 
 // Questão 01
 // const circulo = new Circulo(4)
-// console.log('Área do círculo: ' + circulo.obterArea())
-// console.log('Perímetro do círculo: ' + circulo.obterPerimetro())
+// const area = circulo.obterArea()
+// const perimetro = circulo.obterPerimetro()
+// console.log('Área do círculo: ' + area)
+// console.log('Perímetro do círculo: ' + perimetro)
 // console.log()
 
 // Questão 02
-// const contaBancaria = new ContaBancaria('000123456-78', 'Adrian Mouzinho', 120.25)
-// console.log('Resultado do saque: ' + contaBancaria.sacar(-12))
-// console.log('Resultado do depósito: ' + contaBancaria.depositar(200))
-// console.log()
+const contaBancaria = new ContaBancaria(
+  '000123456-78',
+  'Adrian Mouzinho',
+  120.25
+)
+console.log('Resultado do saque: ' + contaBancaria.sacar(-12))
+console.log('Resultado do depósito: ' + contaBancaria.depositar(200))
+console.log()
 
 // Questão 03
 // const retangulo = new Retangulo(2, 3)
@@ -60,7 +65,6 @@ import { Triandulo } from "./classes/Triangulo"
 // carro.desacelerar()
 // console.log('Velocidade atual: ' + carro.obterVelocidade())
 // console.log()
-
 
 // Questão 09
 // const paciente = new Paciente('Adrian', 21)

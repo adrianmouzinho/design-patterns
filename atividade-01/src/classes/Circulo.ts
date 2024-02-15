@@ -1,19 +1,23 @@
 export class Circulo {
-    raio: number
+  private raio: number
 
-    constructor(raio: number) {
-        this.raio = raio
-    }
+  constructor(raio: number) {
+    this.raio = raio
+  }
 
-    obterArea() {
-        const area = Number((Math.PI * (this.raio ** 2)).toFixed(2))
+  obterArea() {
+    const area = Number((Math.PI * this.raio ** 2).toFixed(2))
 
-        return area
-    }
+    return area
+  }
 
-    obterPerimetro() {
-        const perimetro = Number((2 * Math.PI * this.raio).toFixed(2))
+  obterPerimetro() {
+    const perimetro = Number((2 * Math.PI * this.raio).toFixed(2))
 
-        return perimetro
-    }
+    return perimetro
+  }
+
+  obterRaio() {
+    return this.raio
+  }
 }
