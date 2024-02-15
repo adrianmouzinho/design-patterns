@@ -64,23 +64,29 @@ import { formatarDinheiro } from './utils/formatar-dinheiro'
 // console.log()
 
 // Questão 05
+// try {
+//   const funcionario = new Funcionario('João', 'gerente de vendas', 2500)
+//   const impostos = 250
+//   const beneficios = 100
+//   const salarioLiquido = funcionario.obterSalarioLiquido(impostos, beneficios)
+//   console.log('Olá, ' + funcionario.obterNome())
+//   console.log('Seu salário líquido é de ' + formatarDinheiro(salarioLiquido))
+// } catch (error) {
+//   console.error(error)
+// }
+// console.log()
+
+// Questão 06
 try {
-  const funcionario = new Funcionario('João', 'gerente de vendas', 2500)
-  const impostos = 250
-  const beneficios = 100
-  const salarioLiquido = funcionario.obterSalarioLiquido(impostos, beneficios)
-  console.log('Olá, ' + funcionario.obterNome())
-  console.log('Seu salário líquido é de ' + formatarDinheiro(salarioLiquido))
+  const produto = new Produto('Notebook Acer Aspire 5', 2500, 22)
+  const estaDisponivel = produto.estaDisponivel() ? 'sim' : 'não'
+  const valorTotal = produto.obterValorTotal()
+  console.log('Produto está disponível? ' + estaDisponivel)
+  console.log('Valor total em estoque: ' + formatarDinheiro(valorTotal))
 } catch (error) {
   console.error(error)
 }
 console.log()
-
-// Questão 06
-// const produto = new Produto('Notebook Acer Aspire 5', 2500, 22)
-// console.log('Produto está disponível? ' + produto.estaDisponivel())
-// console.log('Valor total em estoque: ' + produto.obterValorTotal())
-// console.log()
 
 // Questão 07
 // const triangulo = new Triandulo(4, 5, 3)
