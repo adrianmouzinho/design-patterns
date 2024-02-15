@@ -89,26 +89,28 @@ import { formatarDinheiro } from './utils/formatar-dinheiro'
 // console.log()
 
 // Questão 07
-try {
-  const triangulo = new Triandulo(4, 5, 3)
-  const eValido = triangulo.eValido() ? 'sim' : 'não'
-  const area = triangulo.obterArea()
-  console.log('É um triângulo válido? ' + eValido)
-  console.log('Área do triangulo: ' + area)
-} catch (error) {
-  console.error(error)
-}
-console.log()
+// try {
+//   const triangulo = new Triandulo(4, 5, 3)
+//   const eValido = triangulo.eValido() ? 'sim' : 'não'
+//   const area = triangulo.obterArea()
+//   console.log('É um triângulo válido? ' + eValido)
+//   console.log('Área do triangulo: ' + area)
+// } catch (error) {
+//   console.error(error)
+// }
+// console.log()
 
 // Questão 08
-// const carro = new Carro('Fiat', 'Argo', 120.5)
-// console.log('Velocidade atual: ' + carro.obterVelocidade())
-// carro.acelerar()
-// carro.acelerar()
-// console.log('Velocidade atual: ' + carro.obterVelocidade())
-// carro.desacelerar()
-// console.log('Velocidade atual: ' + carro.obterVelocidade())
-// console.log()
+const carro = new Carro('Fiat', 'Argo', 120.5)
+let velocidade = carro.obterVelocidade()
+console.log('Velocidade atual: ' + velocidade)
+carro.acelerar(2)
+velocidade = carro.obterVelocidade()
+console.log('Velocidade atual após acelerar: ' + velocidade)
+carro.desacelerar()
+velocidade = carro.obterVelocidade()
+console.log('Velocidade atual após desacelerar: ' + velocidade)
+console.log()
 
 // Questão 09
 // const paciente = new Paciente('Adrian', 21)

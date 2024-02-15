@@ -1,23 +1,31 @@
 export class Carro {
-    marca: string
-    modelo: string
-    velocidade: number
+  private marca: string
+  private modelo: string
+  private velocidade: number
 
-    constructor(marca: string, modelo: string, velocidade: number) {
-        this.marca = marca
-        this.modelo = modelo
-        this.velocidade = velocidade
-    }
+  constructor(marca: string, modelo: string, velocidade: number) {
+    this.marca = marca
+    this.modelo = modelo
+    this.velocidade = velocidade
+  }
 
-    acelerar() {
-        this.velocidade++
-    }
+  acelerar(valor: number = 1) {
+    this.velocidade += valor
+  }
 
-    desacelerar() {
-        this.velocidade--
-    }
+  desacelerar(valor: number = 1) {
+    this.velocidade -= valor
+  }
 
-    obterVelocidade() {
-        return this.velocidade
-    }
+  obterVelocidade() {
+    return this.velocidade
+  }
+
+  obterMarca() {
+    return this.marca
+  }
+
+  obterModelo() {
+    return this.modelo
+  }
 }
