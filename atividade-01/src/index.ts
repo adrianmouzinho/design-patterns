@@ -8,6 +8,7 @@ import { Paciente } from './classes/Paciente'
 import { Produto } from './classes/Produto'
 import { Retangulo } from './classes/Retangulo'
 import { Triandulo } from './classes/Triangulo'
+import { formatarDinheiro } from './utils/formatar-dinheiro'
 
 // Questão 01
 // const circulo = new Circulo(4)
@@ -51,21 +52,29 @@ import { Triandulo } from './classes/Triangulo'
 // console.log()
 
 // Questão 04
+// try {
+//   const aluno = new Aluno('Adrian', '20211BCC0008', [7, 5, 8, 8])
+//   const media = aluno.obterMedia()
+//   const situacao = aluno.obterSituacaoDoAluno()
+//   console.log('O(A) aluno(a) ' + aluno.obterNome() + ' obteve média ' + media)
+//   console.log('Situação do aluno: ' + situacao)
+// } catch (error) {
+//   console.error(error)
+// }
+// console.log()
+
+// Questão 05
 try {
-  const aluno = new Aluno('Adrian', '20211BCC0008', [7, 5, 8, 8])
-  const media = aluno.obterMedia()
-  const situacao = aluno.obterSituacaoDoAluno()
-  console.log('O(A) aluno(a) ' + aluno.obterNome() + ' obteve média ' + media)
-  console.log('Situação do aluno: ' + situacao)
+  const funcionario = new Funcionario('João', 'gerente de vendas', 2500)
+  const impostos = 250
+  const beneficios = 100
+  const salarioLiquido = funcionario.obterSalarioLiquido(impostos, beneficios)
+  console.log('Olá, ' + funcionario.obterNome())
+  console.log('Seu salário líquido é de ' + formatarDinheiro(salarioLiquido))
 } catch (error) {
   console.error(error)
 }
 console.log()
-
-// Questão 05
-// const funcionario = new Funcionario('João', 'gerente de vendas', 2500)
-// console.log('Salário líquido: ' + funcionario.obterSalarioLiquido(250, 100))
-// console.log()
 
 // Questão 06
 // const produto = new Produto('Notebook Acer Aspire 5', 2500, 22)
