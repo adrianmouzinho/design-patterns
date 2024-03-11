@@ -8,13 +8,13 @@ export class UserDirector {
   }
 
   public buildCustomer(name: string, cpf: string, phone: string) {
-    this.builder?.setName(name)
-    this.builder?.setCpf(cpf)
-    this.builder?.setPhone(phone)
+    this.builder?.buildName(name)
+    this.builder?.buildCpf(cpf)
+    this.builder?.buildPhone(phone)
   }
 
   public buildSeller(name: string, cpf: string) {
-    this.builder?.setName(name)
-    this.builder?.setCpf(cpf)
+    this.builder?.buildName(name)
+    this.builder?.buildCpf(cpf)
   }
 }
