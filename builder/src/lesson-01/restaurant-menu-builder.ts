@@ -1,5 +1,5 @@
-import { RestaurantMenu } from "./restaurant-menu";
-import { IRestaurantMenu } from "./restaurant-menu-builder.interface";
+import { RestaurantMenu } from './restaurant-menu'
+import { IRestaurantMenu } from './restaurant-menu-builder.interface'
 
 export class RestaurantMenuBuilder implements IRestaurantMenu {
     private restaurantMenu?: RestaurantMenu
@@ -15,7 +15,7 @@ export class RestaurantMenuBuilder implements IRestaurantMenu {
     public buildStarter(name: string, price: number): RestaurantMenuBuilder {
         this.restaurantMenu!.addItem({
             name,
-            category: 'starter',
+            category: 'Entrada',
             price
         })
         return this
@@ -24,7 +24,7 @@ export class RestaurantMenuBuilder implements IRestaurantMenu {
     public buildMainCourse(name: string, price: number): RestaurantMenuBuilder {
         this.restaurantMenu!.addItem({
             name,
-            category: 'main course',
+            category: 'Prato principal',
             price
         })
         return this
@@ -33,7 +33,7 @@ export class RestaurantMenuBuilder implements IRestaurantMenu {
     public buildDessert(name: string, price: number): RestaurantMenuBuilder {
         this.restaurantMenu!.addItem({
             name,
-            category: 'dessert',
+            category: 'Sobremesa',
             price
         })
         return this

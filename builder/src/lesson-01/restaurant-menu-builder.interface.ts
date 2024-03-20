@@ -1,4 +1,4 @@
-import { RestaurantMenuBuilder } from "./restaurant-menu-builder";
+import { RestaurantMenuBuilder } from './restaurant-menu-builder'
 
 export interface IRestaurantMenu {
     buildStarter(name: string, price: number): RestaurantMenuBuilder

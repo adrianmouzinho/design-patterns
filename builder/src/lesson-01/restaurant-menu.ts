@@ -1,4 +1,4 @@
-type Category = 'starter' | 'main course' | 'dessert'
+type Category = 'Entrada' | 'Prato principal' | 'Sobremesa'
 
 type Item = {
     name: string
@@ -10,16 +10,16 @@ type Item = {
 export class RestaurantMenu {
     private items: Item[] = []
 
-    public starters() {
-        return this.items.filter(item => item.category === 'starter')
+    public getStarters() {
+        return this.items.filter(item => item.category === 'Entrada')
     }
 
-    public mainCourse() {
-        return this.items.filter(item => item.category === 'main course')
+    public getMainCourse() {
+        return this.items.filter(item => item.category === 'Prato principal')
     }
 
-    public desserts() {
-        return this.items.filter(item => item.category === 'dessert')
+    public getDesserts() {
+        return this.items.filter(item => item.category === 'Sobremesa')
     }
 
     public addItem({ name, category, price }: Item) {
