@@ -8,7 +8,8 @@
     "lesson:1": "tsx watch src/lesson-01/index.ts",
     "lesson:2": "tsx watch src/lesson-02/index.ts",
     "lesson:3": "tsx watch src/lesson-03/index.ts",
-    "lesson:4": "tsx watch src/lesson-04/index.ts"
+    "lesson:4": "tsx watch src/lesson-04/index.ts",
+    "lesson:5": "tsx watch src/lesson-05/index.ts"
   },
   "keywords": [],
   "author": "",
