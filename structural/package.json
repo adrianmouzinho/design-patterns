@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"composite": "tsx watch src/composite/product/index.ts"
+		"composite": "tsx watch src/composite/product/index.ts",
+		"adapter": "tsx watch src/adapter/index.ts"
 	},
 	"keywords": [],
 	"author": "",
