@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"composite": "tsx watch src/composite/product/index.ts"
+		"composite": "tsx watch src/composite/product/index.ts",
+		"bridge": "tsx watch src/bridge/remote-control/index.ts"
 	},
 	"keywords": [],
 	"author": "",
