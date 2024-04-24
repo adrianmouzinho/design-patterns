@@ -8,6 +8,6 @@ export class DrinkWithoutCreamDecorator extends DrinkDecorator {
 	}
 
 	getPrice(): number {
-		return this.drink.getPrice() + 4
+		return this.drink.getPrice() + 3
 	}
 }
