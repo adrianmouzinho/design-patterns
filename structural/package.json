@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"composite": "tsx watch src/composite/product/index.ts",
+		"adapter": "tsx watch src/adapter/index.ts",
 		"bridge": "tsx watch src/bridge/remote-control/index.ts"
 	},
 	"keywords": [],
